@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_margin"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    card_view:cardCornerRadius="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivPoster"
+            android:layout_width="75dp"
+            android:layout_height="113dp"
+            android:layout_marginLeft="8dp"
+            android:scaleType="centerCrop"
+            tools:src="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivPoster"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            tools:text="Judul Film"/>
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivPoster"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginLeft="12dp"
+            android:textSize="13sp"
+            tools:text="2018"/>
+        <TextView
+            android:id="@+id/tvGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivPoster"
+            android:layout_below="@id/tvYear"
+            android:layout_marginLeft="12dp"
+            android:textSize="14sp"
+            tools:text="Genre, Genre"/>
+
+        <TextView
+            android:id="@+id/tvRuntime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivPoster"
+            android:layout_below="@id/tvGenre"
+            android:layout_marginLeft="12dp"
+            android:textSize="14sp"
+            tools:text="2h 29m"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
